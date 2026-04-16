@@ -1,0 +1,120 @@
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+  background: transparent;
+}
+
+.scrolled {
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 1px 0 var(--border-color);
+  backdrop-filter: blur(8px);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 72px;
+}
+
+.logo { display: flex; align-items: center; flex-shrink: 0; }
+
+.logoImg {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.navLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-default);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: var(--brand-primary);
+  transition: width var(--transition-base);
+}
+
+.navLink:hover { color: var(--brand-primary); }
+.navLink:hover::after { width: 100%; }
+
+.cta {
+  flex-shrink: 0;
+  padding: 0.55rem 1.4rem;
+  background: var(--brand-primary);
+  color: var(--text-inverse);
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.cta:hover {
+  background: var(--brand-secondary);
+  transform: translateY(-1px);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burgerLine {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--text-default);
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem var(--container-px) 1.5rem;
+  background: #fff;
+  border-top: 1px solid var(--border-color);
+}
+
+.mobileLink {
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-default);
+}
+
+.mobileCta {
+  margin-top: 1rem;
+  padding: 0.75rem 1.4rem;
+  background: var(--brand-primary);
+  color: var(--text-inverse);
+  font-weight: 600;
+  text-align: center;
+  border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+  .nav, .cta { display: none; }
+  .burger { display: flex; }
+}
