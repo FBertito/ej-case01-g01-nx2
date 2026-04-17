@@ -14,29 +14,29 @@ export default function SobreSection() {
 
         <div className={styles.grid}>
 
-          
+
           <div className={styles.text}>
             {SOBRE.paragraphs.map((p, i) => (
               <p key={i} className={styles.paragraph}>{p}</p>
             ))}
 
-            
+
             <div className={styles.imageWrap}>
               <Image
-                src="/images/sobre-evento.png"
-                alt="Feira NX Experience — substitua pela foto real"
+                src="/images/sobre-evento.jpg"
+                alt="Foto da NX 2026 - evento realizado nos dias 14 e 15 de abril"
                 width={560}
                 height={360}
                 className={styles.image}
               />
               <p className={styles.imageCaption}>
-                
-                Foto do evento — substituir por imagem real
+
+                Foto da NX 2026 - evento realizado nos dias 14 e 15 de abril
               </p>
             </div>
           </div>
 
-          
+
           <div className={styles.cards}>
             {SOBRE.differentials.map((item) => (
               <div key={item.label} className={styles.card}>

@@ -21,12 +21,19 @@ export default function Header() {
 
         <a href="#hero" className={styles.logo} aria-label={SITE.name}>
           <Image
-            src="/logos/nx-logo.png"
+            src="/logos/nx-logo.webp"
             alt={SITE.name}
-            width={200}
-            height={56}
+            width={280}
+            height={78}
             className={styles.logoImg}
             priority
+            unoptimized
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              borderRadius: '5px',
+              padding: '1px',
+              display: 'inline-block'
+            }}
           />
         </a>
 

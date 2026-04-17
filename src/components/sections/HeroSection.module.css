@@ -108,6 +108,7 @@
   max-width: 460px;
   height: auto;
   object-fit: contain;
+  border-radius: 2rem;
 }
 
 .statsBar {

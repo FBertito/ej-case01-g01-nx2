@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section id="hero" className={styles.hero}>
 
-      
+
       <div className={styles.heroBg}>
         <Image
           src={HERO.backgroundImage}
@@ -15,13 +15,13 @@ export default function HeroSection() {
           priority
           className={styles.heroBgImg}
         />
-        
+
         <div className={styles.overlay} aria-hidden="true" />
       </div>
 
       <div className={`container ${styles.inner}`}>
 
-        
+
         <div className={styles.content}>
           <h1 className={styles.headline}>{HERO.headline}</h1>
           <p className={styles.subheadline}>{HERO.subheadline}</p>
@@ -36,7 +36,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        
+
         <div className={styles.visual}>
           <Image
             src="/images/hero-ilustracao.png"
@@ -44,11 +44,12 @@ export default function HeroSection() {
             width={460}
             height={460}
             className={styles.visualImg}
+            unoptimized
           />
         </div>
       </div>
 
-      
+
       <div className={styles.statsBar}>
         <div className="container">
           <div className={styles.statsGrid}>

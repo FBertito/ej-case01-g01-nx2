@@ -30,17 +30,17 @@ export const HERO = {
   },
   stats: [
     { value: '2',    label: 'Eventos por ano'        } as Stat,
-    { value: '500+', label: 'Alunos inscritos'        } as Stat,
-    { value: '30+',  label: 'Empresas participantes'  } as Stat,
+    { value: '2400+', label: 'Alunos inscritos'        } as Stat,
+    { value: '20+',  label: 'Empresas participantes'  } as Stat,
   ],
-  backgroundImage: '/images/hero-bg.png',
+  backgroundImage: '/images/hero-bg.jpg',
 }
 
 export const SOBRE = {
   sectionLabel: 'Sobre nós',
   headline: 'Por que participar do Networking Experience?',
   paragraphs: [
-    'O Networking Experience é realizado pela EJEM — Empresa Júnior Engenharia Mackenzie, uma organização sem fins lucrativos formada por graduandos da Escola de Engenharia e da Faculdade de Computação e Informática do Mackenzie, fundada em 2011.',
+    'O Networking Experience é realizado pela EJEM (Empresa Júnior Engenharia Mackenzie), uma organização sem fins lucrativos formada por graduandos da Escola de Engenharia e da Faculdade de Computação e Informática do Mackenzie, fundada em 2011.',
     'Organizamos dois eventos presenciais por ano dentro do campus Mackenzie: a Feira de Recrutamento e a Semana da Escola de Engenharia. Sua empresa vai direto ao encontro dos candidatos, sem intermediários digitais.',
     'Atendemos todos os eixos — Engenharia, Administração, Contabilidade e Direito — conectando você ao perfil de estagiário que sua empresa precisa.',
   ],
@@ -53,7 +53,7 @@ export const SOBRE = {
     {
       icon: '🏛️',
       label: 'Dentro do campus',
-      description: 'Os eventos acontecem no próprio Mackenzie — os candidatos já estão lá.',
+      description: 'Os eventos acontecem no próprio Mackenzie; os candidatos já estão lá.',
     },
     {
       icon: '📋',
@@ -72,16 +72,22 @@ export const EMPRESAS_SECTION = {
   sectionLabel: 'Parceiros',
   headline: 'Empresas que já participaram',
   subheadline:
-    'De startups a grandes corporações — todos os portes e eixos são bem-vindos.',
+    'De startups a grandes corporações: todos os portes e eixos são bem-vindos.',
 }
 
 export const COMPANIES: Company[] = [
-  { name: 'Empresa Alpha',   logo: '/logos/empresa-alpha.png',   sector: 'Tecnologia'    },
-  { name: 'Empresa Beta',    logo: '/logos/empresa-beta.png',    sector: 'Contabilidade' },
-  { name: 'Empresa Gamma',   logo: '/logos/empresa-gamma.png',   sector: 'Engenharia'    },
-  { name: 'Empresa Delta',   logo: '/logos/empresa-delta.png',   sector: 'Advocacia'     },
-  { name: 'Empresa Epsilon', logo: '/logos/empresa-epsilon.png', sector: 'Administração' },
-  { name: 'Empresa Zeta',    logo: '/logos/empresa-zeta.png',    sector: 'Tecnologia'    },
+  { name: 'Hitachi Energy',    logo: '/logos/hitachi-energy.png',    sector: 'Engenharia'    },
+  { name: 'Raízen',            logo: '/logos/raizen.png',            sector: 'Energia'       },
+  { name: 'CSN',               logo: '/logos/csn.png',               sector: 'Engenharia'    },
+  { name: 'Engeform',          logo: '/logos/engeform.png',          sector: 'Engenharia'    },
+  { name: 'Andrade Gutierrez', logo: '/logos/andrade-gutierrez.png', sector: 'Engenharia'    },
+  { name: 'Grupo Nortis',      logo: '/logos/grupo-nortis.png',      sector: 'Tecnologia'    },
+  { name: 'Rocontec',          logo: '/logos/rocontec.png',          sector: 'Tecnologia'    },
+  { name: 'CIEE',              logo: '/logos/ciee.png',              sector: 'Educação'      },
+  { name: 'Nube',              logo: '/logos/nube.png',              sector: 'Educação'      },
+  { name: 'Rumo',              logo: '/logos/rumo.png',              sector: 'Logística'     },
+  { name: 'Sonda',             logo: '/logos/sonda.png',             sector: 'Tecnologia'    },
+  { name: 'ABB',               logo: '/logos/abb.png',               sector: 'Engenharia'    },
 ]
 
 export const FORM_SECTION = {

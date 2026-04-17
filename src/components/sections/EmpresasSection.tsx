@@ -16,8 +16,6 @@ export default function EmpresasSection() {
         <div className={styles.grid}>
           {COMPANIES.map((company) => (
             <div key={company.name} className={styles.card}>
-
-              
               <div className={styles.logoWrap}>
                 <Image
                   src={company.logo}
@@ -27,10 +25,8 @@ export default function EmpresasSection() {
                   className={styles.logo}
                 />
               </div>
-
               <p className={styles.companyName}>{company.name}</p>
               <span className={styles.sector}>{company.sector}</span>
-
               {company.website && (
                 <a href={company.website} target="_blank" rel="noopener noreferrer" className={styles.siteLink}>
                   Visitar site →
@@ -38,6 +34,9 @@ export default function EmpresasSection() {
               )}
             </div>
           ))}
+          <div className={styles.cardMore}>
+            <p className={styles.cardMoreText}>e muito mais</p>
+          </div>
         </div>
       </div>
     </section>
